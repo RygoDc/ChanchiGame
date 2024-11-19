@@ -20,15 +20,30 @@
         <h1>Bienvenido al Terremoto Game</h1>
         <p>Descripcion del videojuego</p>
 
-        <form action="" method="get" action="gamep1.html">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" />
+        <form id="formulario" method="post" onsubmit="redirigirJuego(event)">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required />
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required />
 
-            <input type="submit" value="Enviar" />
+            <input type="submit" value="Comenzar Juego" />
         </form>
+
+        <script>
+            // Función para redirigir al juego con los parámetros en la URL
+            function redirigirJuego(event) {
+                event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+
+                const nombre = document.getElementById("name").value;
+                const correo = document.getElementById("email").value;
+
+                // Redirigir a gamep1.html pasando los parámetros como parte de la URL
+                window.location.href = `gamep1.html?name=${encodeURIComponent(
+                    nombre
+                )}&email=${encodeURIComponent(correo)}`;
+            }
+        </script>
     </body>
     <footer>
         <p>&copy; 2024 DBTeams Reloaded - Todos los derechos reservados</p>
