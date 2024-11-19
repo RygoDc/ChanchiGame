@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="game">
-        <img src="" alt="">
-        <h2></h2>
-        <p></p>
-        <button type="button">OP1</button>
-        <button type="button">OP2</button>
-        <button type="button">OP3</button>
-    </div>
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juego de Decisiones</title>
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <div id="contenedor-juego">
+            <!-- Contenedor del juego -->
+            <div id="contenedor-pregunta">
+                <img id="imagen-pregunta" src="" alt="Imagen de la pregunta" />
+                <h2 id="titulo-pregunta"></h2>
+                <p id="descripcion-pregunta"></p>
+                <div id="contenedor-opciones">
+                    <!-- Las opciones serán insertadas aquí por JavaScript -->
+                </div>
+            </div>
+            <div id="contenedor-resultados" style="display: none">
+                <h3>Resultado</h3>
+                <p id="resultado-final"></p>
+                <button id="btn-siguiente" onclick="siguientePregunta()">
+                    Siguiente pregunta
+                </button>
+            </div>
+            <div id="contenedor-resumen" style="display: none">
+                <h3>Resumen de tus respuestas</h3>
+                <ul id="lista-respuestas"></ul>
+                <button onclick="reiniciarJuego()">Reiniciar juego</button>
+            </div>
+        </div>
+
+        <script src="juego.js"></script>
+    </body>
 </html>

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#contenedor-juego {
+    text-align: center;
+}
+
+#contenedor-pregunta img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+#contenedor-opciones button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#contenedor-opciones button:hover {
+    background-color: #45a049;
+}

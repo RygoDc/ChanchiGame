@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>ChanchiGame</title>
-</head>
-<header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>ChanchiGame</title>
+    </head>
+    <header></header>
+    <body>
+        <div class="container">
+            <div class="globo">
+                <div class="frontal"></div>
+                <div class="mapfront"></div>
+                <div class="mapback"></div>
+                <div class="back"></div>
+            </div>
+        </div>
 
-</header>
-<body>
-    <div class="container">
-    <div class="globo" ><div class="frontal"></div><div class="mapfront"></div><div class="mapback"></div><div class="back"></div></div>
-    </div>
+        <h1>Bienvenido al Terremoto Game</h1>
+        <p>Descripcion del videojuego</p>
 
-    <h1>Bienvenido al Terremoto Game</h1>
-    <p>Descripcion del videojuego</p>
-    
-    <form action="" method="post">
+        <form action="" method="get" action="gamep1.html">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" />
 
-        <label for="name">Nombre</label>
-        <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-
-        <input type="submit" value="Enviar">
-    </form>
-
-</body>
-<footer>
-    <p>&copy; 2024 DBTeams Reloaded - Todos los derechos reservados</p>
-</footer>
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+    <footer>
+        <p>&copy; 2024 DBTeams Reloaded - Todos los derechos reservados</p>
+    </footer>
 </html>
